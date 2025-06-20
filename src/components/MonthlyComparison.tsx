@@ -28,7 +28,7 @@ const MonthlyComparison: React.FC<MonthlyComparisonProps> = ({ currentMonth, las
           </CardTitle>
         </CardHeader>
         <CardContent className="relative z-10">
-          <div className="text-4xl font-bold mb-3">${currentMonth.toFixed(2)}</div>
+          <div className="text-4xl font-bold mb-3">₹{currentMonth.toFixed(2)}</div>
           <div className="flex items-center text-sm">
             <Sparkles className="w-4 h-4 mr-2 text-emerald-200" />
             <span className="text-emerald-100">Current month spending</span>
@@ -49,7 +49,7 @@ const MonthlyComparison: React.FC<MonthlyComparisonProps> = ({ currentMonth, las
           </CardTitle>
         </CardHeader>
         <CardContent className="relative z-10">
-          <div className="text-4xl font-bold mb-3">${lastMonth.toFixed(2)}</div>
+          <div className="text-4xl font-bold mb-3">₹{lastMonth.toFixed(2)}</div>
           <div className="flex items-center text-sm">
             {isIncrease ? (
               <TrendingUp className="w-4 h-4 mr-2 text-red-200" />

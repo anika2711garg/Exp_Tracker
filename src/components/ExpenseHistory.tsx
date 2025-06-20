@@ -120,7 +120,7 @@ const ExpenseHistory: React.FC<ExpenseHistoryProps> = ({ expenses, onDeleteExpen
                 
                 <div className="flex items-center gap-3">
                   <span className="text-lg font-bold text-gray-900">
-                    ${expense.amount.toFixed(2)}
+                    ₹{expense.amount.toFixed(2)}
                   </span>
                   <Button
                     onClick={() => handleDelete(expense.id)}

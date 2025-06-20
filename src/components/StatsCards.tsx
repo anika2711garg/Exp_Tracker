@@ -23,21 +23,21 @@ const StatsCards: React.FC<StatsCardsProps> = ({ expenses }) => {
   const stats = [
     {
       title: "This Month",
-      value: `$${totalThisMonth.toFixed(2)}`,
+      value: `₹${totalThisMonth.toFixed(2)}`,
       icon: DollarSign,
       gradient: "from-emerald-400 to-cyan-400",
       bgGradient: "from-emerald-50 to-cyan-50"
     },
     {
       title: "Daily Average",
-      value: `$${avgPerDay.toFixed(2)}`,
+      value: `₹${avgPerDay.toFixed(2)}`,
       icon: TrendingUp,
       gradient: "from-purple-400 to-pink-400",
       bgGradient: "from-purple-50 to-pink-50"
     },
     {
       title: "Total Spent",
-      value: `$${totalExpenses.toFixed(2)}`,
+      value: `₹${totalExpenses.toFixed(2)}`,
       icon: Target,
       gradient: "from-orange-400 to-red-400",
       bgGradient: "from-orange-50 to-red-50"

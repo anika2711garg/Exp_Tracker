@@ -50,11 +50,11 @@ const CategorySummary: React.FC<CategorySummaryProps> = ({ currentMonthData, las
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
                     <p className="text-gray-600">This Month</p>
-                    <p className="font-bold text-lg text-gray-800">${currentAmount.toFixed(2)}</p>
+                    <p className="font-bold text-lg text-gray-800">₹{currentAmount.toFixed(2)}</p>
                   </div>
                   <div>
                     <p className="text-gray-600">Last Month</p>
-                    <p className="font-bold text-lg text-gray-800">${lastAmount.toFixed(2)}</p>
+                    <p className="font-bold text-lg text-gray-800">₹{lastAmount.toFixed(2)}</p>
                   </div>
                 </div>
               </div>
