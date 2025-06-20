@@ -16,6 +16,10 @@ export const useExpenseData = (accountName: string) => {
     setExpenses(prev => [...prev, expense]);
   }, []);
 
+  const deleteExpense = useCallback((id: number) => {
+    setExpenses(prev => prev.filter(expense => expense.id !== id));
+  }, []);
+
   const getMonthlyTotal = useCallback((targetDate: Date) => {
     const year = targetDate.getFullYear();
     const month = targetDate.getMonth();
@@ -46,6 +50,7 @@ export const useExpenseData = (accountName: string) => {
   return {
     expenses,
     addExpense,
+    deleteExpense,
     getMonthlyTotal,
     getCategoryTotals,
   };
